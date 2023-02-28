@@ -1,13 +1,15 @@
 # Welcome to our password generator app, the ultimate tool to create strong and secure passwords for all your online accounts.
 
+[# Project Live Link](https://krish68201.github.io/PasswordGenrator/)
+
+
+
 ![Capture](https://user-images.githubusercontent.com/91307741/221761614-89cb5016-9c68-45c2-aef0-d13f684b31cc.PNG)
 
 
 ![2](https://user-images.githubusercontent.com/91307741/221761696-cc38c42c-1f2d-49e1-97f7-b9552865e188.PNG)
 
  
-
-
 ## In today's world, where cyber-attacks and data breaches are rampant, using a strong password is more important than ever before. Our app provides you with a user-friendly interface that allows you to customize the length and character types of your password. You can choose from digits, uppercase and lowercase letters, and symbols to create a password that is unique and difficult to guess.
 
 The password strength is indicated using a color-coded system. A green color indicates a good password, while red indicates a weak or easily guessable password. This feature helps you to determine if your password is strong enough to withstand potential attacks. Our app also ensures that the password you generate is never repeated, making it difficult for anyone to crack your password using automated tools.
