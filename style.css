@@ -1,0 +1,234 @@
+ /* Apply a global font family */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);;
+    color: white;
+   
+  }
+  
+  /* Style the container */
+  .container {
+    
+    width:90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+   
+  }
+  
+  /* Style the header */
+  h1 {
+    color: hsl(0, 0%, 100%);
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 20px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 40px hsl(52, 100%, 62%);
+ 
+  font-size: 36px;
+  text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  /* Style the display container */
+  .display-container {
+    position: relative;
+    margin: 1rem 0;
+    padding-top: 0.35rem;
+    margin-top: 50px;
+    position: relative;
+    background-color: hsl(268, 75%, 9%);
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid hsl(281, 89%, 26%)
+  }
+  
+  /* Style the password display */
+  .display {
+    width: 100%;
+    background-color: transparent;
+    padding: 1.15rem 1rem;
+    color: var(--vb-yellow);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding: 24px;
+    border:none;
+    color: hsl(52, 100%, 62%);
+
+  }
+  .display::placeholder {
+    position:absolute;
+    top: 50%;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height:30px;
+    color:var(--vb-yellow);
+    opacity: 0.65;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+}
+  
+  /* Style the copy button */
+  button[data-copy] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:  hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button[data-copy]:hover {
+    background-color: #1d1d1d;
+  }
+  
+  /* Style the input container */
+  .input-container {
+   
+    width:95%;
+    background-color: hsl(268, 75%, 9%);
+    border-radius: 1rem;
+    padding: 2rem;
+    border-bottom: 0.35rem solid hsl(281, 89%, 26%);
+    
+  }
+  
+  /* Style the password length container */
+  .length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.length-container p:nth-child(1) {
+    color:hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+}
+
+
+.length-container p:nth-child(2) {
+    color:hsl(52, 100%, 62%);
+    font-size: 1.5rem;
+}
+
+  /* Style the password length slider */
+  .slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    outline: none;
+    margin-bottom: 20px;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: hsl(52, 100%, 62%);
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Style the checkboxes */
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: solid wheat;
+  }
+  
+  label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ddd;
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  
+  input[type="checkbox"]:checked + label:before {
+    background-color: hsl(52, 100%, 62%);
+  }
+  
+  /* Style the strength indicator */
+  .strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+  }
+
+
+.strength-container p{
+    color:white;
+    font-size: 1.5rem;
+}
+  
+  [data-indicator] {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 15px;
+  }
+  
+  [data-indicator]:before {
+    content: "";
+    display: inline-block;
+    width: 0%;
+    height: 100%;
+    background-color: #555;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  .generateButton {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: hsl(285, 91%, 52%);
+    text-align: center;
+    border-radius: 0.75rem;
+    border-bottom: 0.35rem solid hsl(52, 100%, 62%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: hsl(52, 100%, 62%);
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+ 
+  
+  
+  
+  
+  
+  
